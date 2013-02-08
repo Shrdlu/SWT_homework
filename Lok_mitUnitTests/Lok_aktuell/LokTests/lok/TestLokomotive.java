@@ -7,27 +7,27 @@ import java.util.Date;
 
 import lok.Gueterwaggon;
 import lok.Kippwaggon;
-import lok.Lokomotive;
-import lok.Lokomotive.KeinLokfuehrerException;
-import lok.Lokomotive.LokException;
-import lok.Lokomotive.LokFaehrtException;
-import lok.Lokomotive.LokStehtException;
-import lok.Lokomotive.LokStehtNichtException;
-import lok.Lokomotive.WaggonsZuSchwerException;
+import lok.DieselLokomotive;
+import lok.DieselLokomotive.KeinLokfuehrerException;
+import lok.DieselLokomotive.LokException;
+import lok.DieselLokomotive.LokFaehrtException;
+import lok.DieselLokomotive.LokStehtException;
+import lok.DieselLokomotive.LokStehtNichtException;
+import lok.DieselLokomotive.WaggonsZuSchwerException;
 
 import org.junit.Before;
 import org.junit.Test;
 
 public class TestLokomotive {
 
-	private Lokomotive lok;
+	private DieselLokomotive lok;
 	private Gueterwaggon g;
 	private Kippwaggon k;
 	private Date d;
 
 	@Before
 	public void setUp() throws Exception {
-		lok = new Lokomotive(2000);
+		lok = new DieselLokomotive(2000);
 		g = new Gueterwaggon(300,1000);
 		k = new Kippwaggon(300,1000);
 		d = new Date();

@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-public class Lokomotive {
+public class DieselLokomotive {
 
 	private static final int STATUS_HAELT = 0;
 	private static final int STATUS_FAEHRT = 1;
@@ -16,7 +16,7 @@ public class Lokomotive {
 	private Date lokfuehrerSeit;
 	private final List<Waggon> waggons; 
 
-	public Lokomotive(float zugkraft) {
+	public DieselLokomotive(float zugkraft) {
 		this.zugkraftKg = zugkraft;
 		this.waggons = new ArrayList<Waggon>();
 		this.lokStatus = STATUS_HAELT;

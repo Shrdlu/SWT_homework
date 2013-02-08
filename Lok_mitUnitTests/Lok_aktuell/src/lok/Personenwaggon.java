@@ -3,8 +3,8 @@ package lok;
 import java.util.ArrayList;
 import java.util.List;
 
-import lok.Lokomotive.LokException;
-import lok.Lokomotive.LokStehtNichtException;
+import lok.DieselLokomotive.LokException;
+import lok.DieselLokomotive.LokStehtNichtException;
 
 public class Personenwaggon extends Waggon{
 

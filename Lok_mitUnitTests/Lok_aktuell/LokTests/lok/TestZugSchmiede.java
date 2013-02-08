@@ -1,14 +1,14 @@
 package lok;
 
 import static org.junit.Assert.*;
-import lok.Lokomotive.LokException;
+import lok.DieselLokomotive.LokException;
 
 import org.junit.Before;
 import org.junit.Test;
 
 public class TestZugSchmiede {	
 	
-	private Lokomotive zug;
+	private DieselLokomotive zug;
 	
 	@Before
 	public void setUp() throws Exception {

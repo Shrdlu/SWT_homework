@@ -1,11 +1,11 @@
 package lok;
 
-import lok.Lokomotive.LokException;
+import lok.DieselLokomotive.LokException;
 
 public class ZugSchmiede{
 //---------------------Personenzug erstellen---------------------------
-   static Lokomotive erstellePersonenZug(int lokZugkraft, int waggonLeergewicht, int waggonMaxPersonen, int waggonAnzahl) throws LokException {
-        Lokomotive lok = new Lokomotive(lokZugkraft);
+   static DieselLokomotive erstellePersonenZug(int lokZugkraft, int waggonLeergewicht, int waggonMaxPersonen, int waggonAnzahl) throws LokException {
+        DieselLokomotive lok = new DieselLokomotive(lokZugkraft);
         for (int i = 0; i < waggonAnzahl-1; i++) {
             Personenwaggon p = new Personenwaggon(waggonLeergewicht, waggonMaxPersonen);
             lok.ankoppeln(p);
@@ -13,8 +13,8 @@ public class ZugSchmiede{
         return lok;
     }
 //---------------------Gueterzug erstellen--------------------------------
-	static Lokomotive erstelleGueterZug(int lokZugkraft, int waggonLeergewicht, int waggonMaxGewicht, int waggonAnzahl) throws LokException{
-		Lokomotive lok = new Lokomotive(lokZugkraft);
+	static DieselLokomotive erstelleGueterZug(int lokZugkraft, int waggonLeergewicht, int waggonMaxGewicht, int waggonAnzahl) throws LokException{
+		DieselLokomotive lok = new DieselLokomotive(lokZugkraft);
         for (int i = 0; i < waggonAnzahl-1; i++) {
             Gueterwaggon g = new Gueterwaggon(waggonLeergewicht, waggonMaxGewicht);
             lok.ankoppeln(g);
@@ -22,8 +22,8 @@ public class ZugSchmiede{
         return lok;
 	}
 //---------------------Kippwaggon-Zug erstellen---------------------------------
-	static Lokomotive erstelleKippwaggonZug(int lokZugkraft, int waggonLeergewicht, int waggonMaxGewicht, int waggonAnzahl) throws LokException{
-		Lokomotive lok = new Lokomotive(lokZugkraft);
+	static DieselLokomotive erstelleKippwaggonZug(int lokZugkraft, int waggonLeergewicht, int waggonMaxGewicht, int waggonAnzahl) throws LokException{
+		DieselLokomotive lok = new DieselLokomotive(lokZugkraft);
         for (int i = 0; i < waggonAnzahl-1; i++) {
             Kippwaggon k = new Kippwaggon(waggonMaxGewicht, waggonLeergewicht);
             lok.ankoppeln(k);
